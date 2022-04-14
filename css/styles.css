@@ -426,6 +426,7 @@ body{
     flex-wrap: wrap;
 }
 .item-caption{
+    padding-top: 20px;
     border: 1px solid var(--item-border-color);
     
 }
