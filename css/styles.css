@@ -200,12 +200,9 @@ body{
 
 .hero-container{
     margin: 0 auto;
-    max-width: 1600px;
     padding: 200px 0;
     background-color: var(--footer-background-color);
-    background-image:linear-gradient(
-        to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)
-    ),
+    background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/main/hero_bg.jpg');
     background-position: center;
     background-size: cover;
@@ -430,7 +427,7 @@ body{
 }
 .item-caption{
     border: 1px solid var(--item-border-color);
-    border-top: none;
+    
 }
 .item:nth-child(-n + 6){
     margin-bottom: 30px;
