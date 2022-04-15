@@ -315,21 +315,24 @@ body{
 .team-style-container{
     background-color: var(--team-section-background-color);
 }
+.team-member{
+    background: var(--secondary-text-color);
+    
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
 .team-member-img{
     width: 270px;
 }
 .team-member-figure{
     width: 270px;
-
-
-    background: var(--secondary-text-color);
-
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
 }
-.social-links-list{
+.footer-social-links-list{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .social-link-item-icon {
     width: 20px;
@@ -356,7 +359,7 @@ body{
 .social-links-link + .social-links-link{
     margin-left: 10px;
 }
-.footer-social-link-item{
+.footer-social-link-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -365,13 +368,16 @@ body{
     border-radius: 50%;
     background-color:rgba(255, 255, 255, 0.1);
 }
-.footer-social-link-item:hover{
+.footer-social-link-container:hover{
     background-color:var(--aditional-color);
 }
 .footer-social-links-link {
     color: var(--secondary-text-color);
 }
-.footer-social-links-link + .footer-social-links-link {
+.footer-social-links-link {
+
+}
+.footer-social-link-item + .footer-social-link-item {
     margin-left:10px;
 }
 
@@ -391,6 +397,8 @@ body{
 }
 
 .team-member-social-links{
+    display: flex;
+    justify-content: center;
     padding-bottom: 30px;
 }
 .team-member-name{
@@ -495,19 +503,21 @@ body{
     display: flex;
     justify-content: center;
 }
-
 .client-list-link{
+    cursor: pointer;
+}
+.client-list-link-container{
+    padding: 16px 32px;
+}
+.client-list-item{
     border: 1px solid #AFB1B8;
     color:var(--client-icon-color);
 }
-.client-list-link:hover{
+.client-list-item:hover{
     color:var(--aditional-color);
     border: 1px solid var(--aditional-color);
 }
-.client-list-item{
-    padding: 16px 32px;
-}
-.client-list-link + .client-list-link{
+.client-list-item + .client-list-item{
     margin-left: 30px;
 }
 .client-list-item-icon{
